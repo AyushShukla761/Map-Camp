@@ -1,0 +1,21 @@
+<% if(message.success && message.success.length) {%>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Congrats!</strong> <%= message.success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <% } %>
+    
+    
+
+   <% if(message.error && message.error.length) {%>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Sorry!</strong> <%= message.error %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+  
+      <% } %>
+      
+      
